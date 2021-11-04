@@ -1,0 +1,26 @@
+<div class="mul">
+<div class="header">    
+<h1>Multiplication Table</h1>
+</div>
+<div class="content">
+<p >5 X {{counter}} = {{ counter * 5 }}</p>
+<div *ngIf = "counter == 10; then ten; else normal">Ignore</div>
+
+<ng-template #ten>
+    <div class="continue">
+    <p>Would you like to continue ?</p>
+    <br/>
+    <button class="btn" (click)="IncrementCounter()" > Yes </button> 
+    <br/>
+    <button class="btn" (click)="NoMessage()" > No </button>
+</div>
+</ng-template>
+
+<ng-template #normal>
+    <button class="btn" (click)="IncrementCounter()" >Increment Counter</button>
+    <br/>
+    <button class="btn" (click)="DecrementCounter()" >Decrement Counter</button>
+</ng-template>
+</div>
+</div>
+
