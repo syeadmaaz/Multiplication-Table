@@ -1,4 +1,4 @@
-# MulTable
+# Mulplication-Table
 
 ## Project Overview
 
